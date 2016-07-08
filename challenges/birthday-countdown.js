@@ -34,3 +34,21 @@
 */
 
 // YOUR CODE HERE
+var birthdayReminder = [
+  {
+    name: "Jack",
+    dob: "10/31/2013"
+  },
+  {
+    name: "Jill",
+    dob: "4/01/1975"
+  }
+];
+
+function daysUntilDate(dateStr) {
+  return Math.round((new Date(dateStr) - Date.now() / 86400000));
+}
+
+function daysBetweenDateAndNow(dateNow, dateStr) {
+  return (dateNow-dateStr);
+}

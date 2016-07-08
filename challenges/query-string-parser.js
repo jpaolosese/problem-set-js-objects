@@ -45,3 +45,17 @@
 */
 
 // YOUR CODE HERE
+var queryString = {}; //create empty object
+
+function parseQueryString (string) {
+  var queryStringArray = string.split('&'); //removes ampersands
+  var arrayElement = [];                    //creates empty array
+  queryStringArray.forEach(function (element) {
+    arrayElement = element.split('=');      //removes equal signs
+    queryString[arrayElement[0]] = arrayElement[1]; //adds keys and values to the queryString object
+  });
+  //console.log(queryString);                 //crutch -- console logs queryString object after iterations
+  return queryString;
+}
+
+//got it to work (y)

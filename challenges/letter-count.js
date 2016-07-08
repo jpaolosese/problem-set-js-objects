@@ -31,3 +31,18 @@
 */
 
 // YOUR CODE HERE
+var stringObject = {}; //creates empty Object
+
+function letterCount(string) {
+  var splitString = string.split(''); //splits string into string arrays of single letter arrays
+  console.log(string);  //crutch --
+  splitString.forEach(function (element) {
+    if (stringObject[element]) {
+      stringObject[element]++;
+    }
+    else {
+      stringObject[element] = 1;
+    }
+  });
+  return stringObject;
+}

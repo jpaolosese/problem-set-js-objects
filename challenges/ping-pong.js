@@ -38,3 +38,13 @@
 */
 
 // YOUR CODE HERE
+
+//pseudocode:
+//function pingpong(table):
+//  for loop (however many iterations)
+//    table[i] = null;
+//    table[i+1] = new StepsObject.steps += 1
+//  end for loop
+
+
+//will DEFINITELY refactor in the future
